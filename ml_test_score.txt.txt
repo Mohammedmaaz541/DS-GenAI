@@ -1,0 +1,46 @@
+Task 1 – Analysis on ML Test Scores
+Innomatics Research Labs – Assessment
+
+Name: Saad Ullah Khan
+Date: 1 January 2026
+
+
+1. Dataset Overview
+------------------
+The dataset consists of 149 students from three different batches.
+Each student attempted a Machine Learning test scored out of 7.
+
+Columns:
+- Batch
+- User_ID
+- Score
+
+The dataset contains no missing values.
+
+
+2. Batch-wise Summary Statistics
+--------------------------------
+Batch        Students   Mean   Median   Std Dev   Min   Max
+AI_ELITE_4   48         3.79   4        1.44      0     7
+AI_ELITE_6   48         4.23   4        1.64      0     7
+AI_ELITE_7   53         5.06   5        1.45      2     7
+
+
+3. Key Insights
+---------------
+- AI_ELITE_7 is the best-performing batch with the highest average score.
+- AI_ELITE_6 shows moderate performance with higher variability.
+- AI_ELITE_4 has the lowest average score, indicating a need for improvement.
+
+
+4. Recommendations
+------------------
+- Provide additional mentoring and revision sessions for AI_ELITE_4.
+- Offer targeted support to low-performing students in AI_ELITE_6.
+- Continue current teaching strategy for AI_ELITE_7 and introduce advanced ML topics.
+
+
+5. Conclusion
+-------------
+The analysis highlights clear performance differences among the three batches.
+These insights can help improve training effectiveness and student outcomes.
