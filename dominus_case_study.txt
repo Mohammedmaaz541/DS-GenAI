@@ -1,0 +1,92 @@
+Diminos Store – Delivery Time Analysis
+Freelance Data Scientist Report
+
+------------------------------------
+1. Problem Overview
+------------------------------------
+Kanav owns a Diminos pizza store that operates 24x7. Diminos promises
+customers delivery within 31 minutes, failing which the order is free.
+To evaluate store performance, Diminos uses a key metric:
+the 95th percentile of delivery time must be less than 31 minutes.
+
+Kanav wants to understand whether his store meets this requirement
+and what actions can be taken to avoid losing the franchise.
+
+------------------------------------
+2. Dataset Description
+------------------------------------
+The dataset contains order-level delivery information with the
+following columns:
+
+- order_id: Unique identifier for each order
+- order_placed_at: Time when the order was placed
+- order_delivered_at: Time when the order was delivered
+
+Delivery time is calculated as the difference between
+order_delivered_at and order_placed_at in minutes.
+
+------------------------------------
+3. Understanding the 95th Percentile Metric
+------------------------------------
+The 95th percentile delivery time represents the time within which
+95 percent of orders are delivered.
+
+Diminos' requirement:
+95th percentile delivery time < 31 minutes
+
+This means that only the slowest 5 percent of orders are allowed to
+exceed 31 minutes. Even a small number of delayed deliveries can
+cause the store to fail this metric.
+
+------------------------------------
+4. Sample Delivery Time Observation
+------------------------------------
+From the sample data provided, most orders are delivered within
+15–20 minutes. However, some orders take significantly longer
+(for example, one order took around 38 minutes).
+
+These delayed orders act as outliers and have a strong impact
+on the 95th percentile value.
+
+------------------------------------
+5. Key Insights
+------------------------------------
+1. Most orders are delivered well within the promised time,
+   indicating good average performance.
+2. A small number of late deliveries can push the 95th percentile
+   beyond 31 minutes, putting the franchise at risk.
+3. Late deliveries are likely to occur during peak hours,
+   late-night operations, or when delivery staff is insufficient.
+4. Average delivery time alone is not enough to judge performance;
+   controlling outliers is critical.
+
+------------------------------------
+6. Business Recommendations
+------------------------------------
+To ensure the 95th percentile delivery time stays below 31 minutes,
+Kanav should take the following actions:
+
+Short-Term Actions:
+- Increase delivery staff during peak hours
+- Prioritize orders once delivery time crosses 25 minutes
+- Monitor live delivery delays
+
+Medium-Term Actions:
+- Analyze delivery times by hour and day
+- Improve kitchen workflow during rush periods
+- Optimize delivery routes
+
+Long-Term Actions:
+- Set an internal delivery target of 27–28 minutes
+- Use historical data to predict peak demand
+- Create alerts when delivery time trends approach risk levels
+
+------------------------------------
+7. Conclusion
+------------------------------------
+Although most Diminos orders are delivered on time, delayed orders
+significantly affect the 95th percentile delivery metric.
+
+By reducing late deliveries and focusing on operational efficiency,
+Kanav can meet Diminos’ performance requirements, retain the
+franchise, and improve customer satisfaction.
